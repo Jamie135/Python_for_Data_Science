@@ -14,3 +14,6 @@ def NULL_not_found(object: any) -> int:
         print("Type not Found")
         return 1
     return 0
+
+
+# print("First Module's name: {}".format(__name__))

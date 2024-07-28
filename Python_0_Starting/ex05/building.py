@@ -69,7 +69,7 @@ def count_digit(str):
     return count
 
 
-def main(argv):
+def display_str(argv):
     """
     Display informations of a string:
     - uppercases
@@ -95,12 +95,12 @@ def main(argv):
     print(f"{count_digit(str_input)} digits")
 
 
-if __name__ == "__main__":
+def main():
     try:
         if len(sys.argv) > 2:
             raise AssertionError("more than one argument is provided")
         else:
-            main(sys.argv)
+            display_str(sys.argv)
 
     except AssertionError as a:
         print(f"AssertionError: {a}")
@@ -108,3 +108,7 @@ if __name__ == "__main__":
         print(f"\nKeyboardInterrupt: {k}")
     except EOFError as eof:
         print(f"EOFError: {eof}")
+
+
+if __name__ == "__main__":
+    main()
