@@ -2,41 +2,40 @@
 
 ## Build
 
+```bash
+python3 -m build
 ```
-python3 setup.py sdist bdist_wheel
-```
+This will create the dist/ directory containing ft_package-0.0.1.tar.gz and ft_package-0.0.1-py3-none-any.whl
 
 ## Install
 
-```
+```bash
 pip3 install ./dist/ft_package-0.0.1.tar.gz
+```
+or
+```bash
+pip3 install ./dist/ft_package-0.0.1-py3-none-any.whl
 ```
 
 ## Display
 
-```
+```bash
 pip3 show -v ft_package
 ```
 
 ## Test
 
-```
+```bash
 python3 tester.py
 ```
 
 ## Uninstall
 
-```
+```bash
 python3 uninstall.py
 ```
 
 # Information
-
-This Python module defines a function called `setup()`.
-
-The `setup()` function creates a distribution of the `ft_package`, returning a dictionary that contains the metadata for the package.
-
-The `setup()` function takes the following arguments:
 
 * `name`: The name of the package. This is the name that will be used to install the package.
 * `version`: The version of the package. This is a string that uniquely identifies the version of the package.

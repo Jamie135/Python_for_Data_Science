@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+description = "A sample test package"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+  {name = "pbureera"}, {email = "pbureera@student.42.fr"},
+]
+
+[project.urls]
+Home-page = "https://github.com/Jamie135/Python_for_Data_Science/tree/main/Python_0_Starting/ex09/ft_package"
