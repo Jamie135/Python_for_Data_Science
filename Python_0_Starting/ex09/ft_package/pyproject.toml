@@ -13,5 +13,5 @@ authors = [
   {name = "pbureera"}, {email = "pbureera@student.42.fr"},
 ]
 
-[project.urls]
-Home-page = "https://github.com/Jamie135/Python_for_Data_Science/tree/main/Python_0_Starting/ex09/ft_package"
+# [project.urls]
+# Home-page = "https://github.com/Jamie135/Python_for_Data_Science/tree/main/Python_0_Starting/ex09/ft_package"
