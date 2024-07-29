@@ -6,18 +6,17 @@ from PIL import Image
 
 def ft_load(path: str) -> array:
     try:
+        if not path.lower().endswith(("jpg", "jpeg")):
+            raise Exception("only JPG and JPEG formats are supported.")
         if not os.path.exists(path):
             raise Exception("no such file or directory")
-        # context manager to help close file in case of error
-        with Image.open(path) as img:
-            # use array() to convert the img object into array of float32
-            img_array = np.array(img)
-            print(f"The shape of image is: "
-                  f"({img_array.shape[0]}, {img_array.shape[1]},"
-                  f" {len(img_array[0][0])})")
-            return (img_array)
-    # OSError handles the error from context manager
-    except OSError as oserr:
-        print(f"OSError: {oserr}")
+        img = Image.open(path)
+        # use array() to convert the img object into array
+        img_array = np.array(img)
+        print(f"The shape of image is: "
+              f"({img_array.shape[0]}, {img_array.shape[1]},"
+              f" {len(img_array[0][0])})")
+        return (img_array)
     except Exception as e:
         print(f"Error: {e}")
+        return ""
