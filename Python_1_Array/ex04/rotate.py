@@ -58,7 +58,7 @@ def main():
             raise AssertionError("failed to load image.")
 
         cropped = image.crop((400, 200, 800, 600))
-        # save cropped image as an jpg file 
+        # save cropped image as an jpg file
         # to passed on the ft_load() function
         cropped.save("cropped.jpg")
         ft_load("cropped.jpg")
