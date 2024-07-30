@@ -16,6 +16,7 @@ def ft_load(path: str) -> array:
         print(f"The shape of image is: "
               f"({img_array.shape[0]}, {img_array.shape[1]},"
               f" {len(img_array[0][0])})")
+        print(img_array)
         return (img_array)
     except Exception as e:
         print(f"Error: {e}")
