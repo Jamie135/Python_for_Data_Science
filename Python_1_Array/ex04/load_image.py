@@ -14,8 +14,7 @@ def ft_load(path: str) -> array:
         # use array() to convert the img object into array
         img_array = np.array(img)
         print(f"The shape of image is: "
-              f"({img_array.shape[0]}, {img_array.shape[1]},"
-              f" {len(img_array[0][0])})")
+              f"({img_array.shape[0]}, {img_array.shape[1]})")
         return (img_array)
     except Exception as e:
         print(f"Error: {e}")
