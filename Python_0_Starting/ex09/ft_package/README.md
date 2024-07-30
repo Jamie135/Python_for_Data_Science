@@ -1,7 +1,13 @@
 # ft_package
 
+If "python3" command doesn't work, try "python"
+
 ## Build
 
+```bash
+python3 setup.py sdist bdist_wheel
+```
+or
 ```bash
 python3 -m build
 ```
