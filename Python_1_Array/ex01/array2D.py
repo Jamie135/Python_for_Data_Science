@@ -18,6 +18,11 @@ def slice_me(family: list, start: int, end: int) -> list:
         # to be able to apply numpy
         npfamily = np.array(family)
         print(f"My shape is : {npfamily.shape}")
+
+        # npfamily[start:end, :] signifie que l'on sélectionne 
+        # une sous-partie de la matrice npfamily
+        # on prend les lignes allant de start a end
+        # on prend toutes les colonnes avec ":"
         truncated = npfamily[start:end, :]
         print(f"My new shape is : {truncated.shape}")
         return truncated
