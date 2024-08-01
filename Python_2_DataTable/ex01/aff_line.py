@@ -14,8 +14,16 @@ def main():
         # syntax: france is equal to SELECT 'country'
         # WHERE country == 'France'
         france = df[df['country'] == 'France']
+        print(f"france:\n{france}")
+
+        # retreive all the years column starting from index 1
+        # index 0 corresponds to country column
         years = france.columns[1:].astype(int)
+        print(f"years:\n{years}")
+
+        # retreive all france's data from the first row values[0]
         expectancy = france.values[0][1:]
+        print(f"expectency:\n{expectancy}")
 
         plt.figure(figsize=(10, 6))
         plt.plot(years, expectancy, label='Life Expectancy', color='blue')
