@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 
 class Character(ABC):
-    """Class representing GOT character"""
+    """Class representing a character from any universe"""
 
     @abstractmethod
     def __init__(self, first_name, is_alive=True):
