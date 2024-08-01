@@ -27,7 +27,7 @@ def main():
         print(f"Error: {e}")
         return None
     except KeyboardInterrupt:
-        print("KeyboardInterrupt")
+        print("\nKeyboardInterrupt")
         return None
 
 

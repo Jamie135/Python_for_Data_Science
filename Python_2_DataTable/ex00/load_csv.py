@@ -3,7 +3,7 @@ import pandas as pd
 
 def load(path: str) -> pd:
     """ This function takes a path as argument,
-    writes the dimensions of the data set and returns it"""
+    writes the dimensions of the data set as an array and returns it"""
     try:
         df = pd.read_csv(path)
         print(f"Loading dataset of dimensions ({df.shape[0]}, {df.shape[1]})")
