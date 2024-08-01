@@ -19,7 +19,7 @@ def slice_me(family: list, start: int, end: int) -> list:
         npfamily = np.array(family)
         print(f"My shape is : {npfamily.shape}")
 
-        # npfamily[start:end, :] signifie que l'on sélectionne 
+        # npfamily[start:end, :] signifie que l'on sélectionne
         # une sous-partie de la matrice npfamily
         # on prend les lignes allant de start a end
         # on prend toutes les colonnes avec ":"
