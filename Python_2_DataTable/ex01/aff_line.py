@@ -25,9 +25,9 @@ def main():
         expectancy = france.values[0][1:]
         print(f"expectency:\n{expectancy}")
 
-        plt.figure(figsize=(10, 6))
         plt.plot(years, expectancy, label='Life Expectancy', color='blue')
         plt.title('France Life Expectancy Projections')
+        plt.xticks(range(1800, 2100, 40), range(1800, 2100, 40))
         plt.xlabel('Year')
         plt.ylabel('Life Expectancy')
         plt.show()
