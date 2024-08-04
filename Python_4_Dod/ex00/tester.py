@@ -9,3 +9,4 @@ ft_statistics(
     )
 print("-----")
 ft_statistics(toto="mean", tutu="median", tata="quartile")
+ft_statistics(1, 42, 360, 11, 64, toto="toto", tutu="median", tata="quartile")
