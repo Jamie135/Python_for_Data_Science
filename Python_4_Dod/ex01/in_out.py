@@ -31,12 +31,9 @@ def outer(x: int | float, function) -> object:
         """
         # use nonlocal to modify outer scope variables
         nonlocal count, x
-        if count == 0:
-            result = function(x)
-        else:
-            result = function(x)
-        x = result  # Update x with the new result
-        count += 1  # Increment the count
+        result = function(x)
+        x = result
+        count += 1
         return result
 
     return inner
