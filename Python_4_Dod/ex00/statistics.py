@@ -43,7 +43,9 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
     """
     try:
         if not args:
-            raise Exception
+            for value in kwargs.items():
+                print("ERROR")
+            return
         if not all(isinstance(arg, (int, float)) for arg in args):
             raise Exception
         args_sorted = sorted(args)
@@ -57,7 +59,5 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
         for key, value in kwargs.items():
             if value in results:
                 print(f"{value} : {results[value]}")
-            else:
-                print("ERROR")
     except Exception:
         print("ERROR")
