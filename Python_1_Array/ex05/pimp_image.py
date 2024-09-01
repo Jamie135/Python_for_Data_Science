@@ -37,9 +37,7 @@ def ft_blue(array) -> array:
 
 def ft_grey(array) -> array:
     """Converts the image to grayscale."""
-    grey = (
-        array[:, :, 0] / 3 + array[:, :, 1] / 3 + array[:, :, 2] / 3
-    )
+    grey = np.sum(array / 3, axis=2)
     # np.repeat(a, repeats, axis=None)
     # repeats elements of an array and can be used
     # to repeat elements along a specified axis
